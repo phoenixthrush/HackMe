@@ -1,0 +1,39 @@
+levels
+
+level 1: 81522337		EASY
+level 2: 44678202		EASY
+level 3: 32836712		EASY
+level 4: 12557435		EASY
+level 5: 65903424		EASY
+level 6: 34131087		MEDIUM
+level 7: 97340094		MEDIUM
+level 8: 67788227		MEDIUM
+
+future levels:
+
+41351314
+40327316
+
+
+
+backend checking script
+
+$(document).ready(function() {
+    $('#login').submit(function(foo) {
+        foo.preventDefault();
+        if (($('#email').val() == email && $('#password').val() == password)) {
+            window.open("../next-level-number", "_self");
+        } else {
+            window.open("../../assets/images/nope.png", "_blank");
+        }
+    });
+});
+
+// disabling the back button
+$(document).ready(function(){function o(){window.history.forward()}window.onload=o(),window.onpageshow=function(n){n.persisted&&o()}});
+
+
+
+
+obf for backend
+https://obfuscator.io
